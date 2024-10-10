@@ -1,9 +1,5 @@
 package com.hemebiotech.analytics;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -25,7 +21,7 @@ public class AnalyticsCounter {
 	// _______________________________________________________
 	// #2 : getSymptoms -- gets the list from input file
 	public List<String> getSymptoms() {
-		return reader.GetSymptoms();
+		return reader.getSymptoms();
 	}
 
 	// _______________________________________________________
