@@ -9,10 +9,10 @@ import java.util.List;
 
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
-	private String filepath;
+	private String filePath;
 
-	public ReadSymptomDataFromFile (String filepath) {
-		this.filepath = filepath;
+	public ReadSymptomDataFromFile (String filePath) {
+		this.filePath = filePath;
 	}
 	
 	@Override
@@ -21,11 +21,11 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 		// create a list of results
 		ArrayList<String> result = new ArrayList<>();
 
-		if (filepath != null)
+		if (filePath != null)
 		{
 			try {
 				// create a file reader
-				FileReader fileReader = new FileReader(filepath);
+				FileReader fileReader = new FileReader(filePath);
 				// wrap file reader in bufferReader for efficient Reading
 				BufferedReader reader = new BufferedReader(fileReader);
 				// read the file line by line
